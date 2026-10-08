@@ -1,0 +1,13 @@
+{
+  "name": "pratinidhi-example-invoice",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx --conditions=pratinidhi-source index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@pratinidhi/client": "0.1.0"
+  }
+}

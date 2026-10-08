@@ -1,0 +1,31 @@
+{
+  "name": "@pratinidhi/client",
+  "version": "0.1.0",
+  "description": "Client for the Pratinidhi India Toolkit: IFSC, pincode, GSTIN, PAN, HSN/SAC, GST maths and invoice extraction over MCP",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "pratinidhi-source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0"
+  },
+  "devDependencies": {
+    "zod": "^4.0.0"
+  }
+}
